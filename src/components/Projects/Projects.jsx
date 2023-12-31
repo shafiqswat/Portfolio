@@ -4,21 +4,6 @@ import React from "react";
 import styled from "styled-components";
 import SliderComp from "./Slider";
 import { Zoom } from "react-awesome-reveal";
-import Project from "./Project"; // Import your Project component
-
-const projectsData = [
-  {
-    img: "images/logo.png",
-    disc: "Developed a responsive e-commerce website using React and Redux. Implemented product catalog, shopping cart, and user authentication.",
-    demoLink: "https://example.com/project1-demo", // Replace with the actual demo link
-  },
-  {
-    img: "images/Ella.png",
-    disc: "Designed and implemented a portfolio website showcasing my skills and projects. Utilized React, styled-components, and various animation libraries.",
-    demoLink: "https://example.com/project2-demo", // Replace with the actual demo link
-  },
-  // Add more projects as needed
-];
 
 const Projects = () => {
   return (
@@ -28,19 +13,13 @@ const Projects = () => {
           Recent <span className='green'>Projects</span>
         </h1>
         <p>
-          Explore some of my recent projects below. Click on the demo links to
-          experience the projects live.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+          doloremque voluptate excepturi porro sed totam quis animi dolorum
+          rerum earum.
         </p>
       </Zoom>
       <Slide>
-        <SliderComp>
-          {projectsData.map((item, index) => (
-            <Project
-              key={index}
-              item={item}
-            />
-          ))}
-        </SliderComp>
+        <SliderComp />
       </Slide>
     </Container>
   );
