@@ -9,18 +9,18 @@ import { Slide } from "react-awesome-reveal";
 
 let clients = [
   {
-    name: "Sophie Rodriguez",
+    name: "Mark Strong",
     position: "Frontend Developer",
-    img_url: "URL_TO_YOUR_IMAGE_1",
+    img_url: "/images/Client1.png",
     stars: 5,
-    disc: `As a frontend developer, I was amazed by their expertise in React. 
+    disc: ` I was amazed by their expertise in React. 
         They delivered high-quality code with a keen eye for detail and responsiveness. 
         Working with them has been a delightful experience!`,
   },
   {
     name: "Alex Patel",
     position: "UI/UX Designer",
-    img_url: "URL_TO_YOUR_IMAGE_2",
+    img_url: "/images/Client2.png",
     stars: 4,
     disc: `Collaborating with them on UI/UX projects was seamless. 
         Their Bootstrap skills brought a modern touch to our designs, ensuring a great user experience.`,
@@ -28,7 +28,7 @@ let clients = [
   {
     name: "Ella Thompson",
     position: "Web Developer",
-    img_url: "URL_TO_YOUR_IMAGE_3",
+    img_url: "/images/Ella.png",
     stars: 5,
     disc: `I had the pleasure of working with them on web development tasks. 
         Their proficiency in JavaScript and React significantly elevated the functionality of our projects.`,

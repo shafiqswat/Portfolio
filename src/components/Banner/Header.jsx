@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import styled from "styled-components";
-import { GiCandleFlame } from "react-icons/gi";
+// import { GiCandleFlame } from "react-icons/gi";
 
 const Header = () => {
   const [bar, setBar] = useState(false);
@@ -10,7 +10,10 @@ const Header = () => {
     <Container bar={bar}>
       <Logo>
         <span className='green'>
-          <GiCandleFlame />
+          <img
+            src='/images/logo.png'
+            alt=''
+          />
         </span>
         <h1>Portfolio</h1>
       </Logo>
@@ -54,6 +57,10 @@ const Container = styled.div`
   animation: header 500ms ease-in-out;
   @media (max-width: 840px) {
     width: 90%;
+  }
+  .green img {
+    max-width: 70px !important;
+    max-height: 70px !important;
   }
   .bars {
     display: none;
