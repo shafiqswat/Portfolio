@@ -13,9 +13,8 @@ const Projects = () => {
           Recent <span className='green'>Projects</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-          doloremque voluptate excepturi porro sed totam quis animi dolorum
-          rerum earum.
+          I am excited to share my latest projects, dynamic web applications
+          built using React.js.
         </p>
       </Zoom>
       <Slide>

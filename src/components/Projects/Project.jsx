@@ -15,7 +15,11 @@ const Project = (props) => {
         <h1>Description</h1>
         <p>
           {disc}
-          <a href='/'>demo</a>
+          <a
+            href='https://www.petsbroz.com/'
+            target='_blank'>
+            demo
+          </a>
         </p>
       </div>
     </Container>
@@ -34,8 +38,8 @@ const Container = styled.div`
   position: relative;
   overflow: hidden;
   img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     transition: transform 400ms ease-in-out;
   }

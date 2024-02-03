@@ -158,15 +158,18 @@ const Social = styled.div`
 `;
 const Profile = styled.div`
   img {
-    width: 25rem;
+    max-width: 30rem;
+    height: 28rem;
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {
       width: 20rem;
+      // height: 20rem;
     }
 
     @media (max-width: 660px) {
       width: 18rem;
+      // height: 18rem;
     }
 
     @media (max-width: 640px) {
