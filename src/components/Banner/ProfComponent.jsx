@@ -11,7 +11,7 @@ const ProfComponent = () => {
   const handleCall = () => {
     const phoneNumber = "+923470817600";
     const telLink = `tel:${phoneNumber}`;
-    window.open(telLink, "_blank");
+    window.open(telLink, "_blank", "noreferrer");
   };
 
   return (
