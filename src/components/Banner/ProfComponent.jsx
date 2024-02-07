@@ -8,6 +8,12 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 
 const ProfComponent = () => {
+  const handleCall = () => {
+    const phoneNumber = "+923470817600";
+    const telLink = `tel:${phoneNumber}`;
+    window.open(telLink, "_blank");
+  };
+
   return (
     <Container id='home'>
       <Slide direction='left'>
@@ -29,7 +35,7 @@ const ProfComponent = () => {
             💡 Let's collaborate to bring your digital vision to life with
             innovative solutions and a strong command of ReactJS!
           </p>
-          <button>Let's talk</button>
+          <button onClick={handleCall}>Let's talk</button>
           <Social>
             <p>Check out my</p>
             <div className='social-icons'>
