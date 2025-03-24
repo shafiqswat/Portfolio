@@ -26,29 +26,45 @@ const Projects = () => {
 
 export default Projects;
 
+// Projects.js (updated styles)
 const Container = styled.div`
   width: 80%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 6rem 0;
   text-align: center;
   position: relative;
+
   @media (max-width: 840px) {
     width: 90%;
   }
+
   h1 {
-    font-size: 1.9rem;
+    font-size: 2.5rem;
+    font-family: "Secular One", sans-serif;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #01be96 30%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
   }
 
   p {
-    width: 28rem;
+    width: 60%;
     margin: 0 auto;
     padding: 1rem 0;
-    font-size: 0.9rem;
-    @media (max-width: 500px) {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+
+    @media (max-width: 768px) {
       width: 90%;
+      font-size: 0.9rem;
     }
   }
 `;
 
-const Slide = styled.div``;
+const Slide = styled.div`
+  margin-top: 4rem;
+  position: relative;
+`;

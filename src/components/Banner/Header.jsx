@@ -11,8 +11,8 @@ const Header = () => {
       <Logo>
         <span className='green'>
           <img
-            src='/images/logo.png'
-            alt=''
+            src={`${process.env.PUBLIC_URL}/images/logo.png`}
+            alt='Logo'
           />
         </span>
         <h1>Portfolio</h1>
@@ -160,6 +160,9 @@ const Nav = styled.div`
       }
       :hover {
         opacity: 0.7;
+      }
+      @media (max-width: 670px) {
+        font-size: 0.9em;
       }
     }
   }

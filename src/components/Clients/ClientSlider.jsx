@@ -1,99 +1,88 @@
 /** @format */
 
+// ClientSlider.js
 import React from "react";
 import styled from "styled-components";
-import { IoIosQuote } from "react-icons/io";
-import { AiOutlineStar } from "react-icons/ai";
+import { FaStar } from "react-icons/fa";
 
-const ClientSlider = (props) => {
-  const { name, position, img_url, stars, disc } = props.item;
+const ClientSlider = ({ item }) => {
+  const stars = Array(item.stars).fill(<FaStar />);
+
   return (
-    <Container>
+    <Card>
       <Header>
-        <span className='quote'>
-          <IoIosQuote />
-        </span>
+        <img
+          src={process.env.PUBLIC_URL + item.img_url}
+          alt={item.name}
+        />
         <div>
-          {Array(stars)
-            .fill()
-            .map((_, i) => (
-              <span
-                className='star'
-                key={i}>
-                <AiOutlineStar />
-              </span>
-            ))}
+          <Name>{item.name}</Name>
+          <Position>{item.position}</Position>
         </div>
       </Header>
-      <Body>{disc}</Body>
-      <Footer>
-        <img
-          src={img_url}
-          alt={name}
-        />
-        <div className='details'>
-          <h1>{name}</h1>
-          <p>{position}</p>
-        </div>
-      </Footer>
-    </Container>
+      <Stars>
+        {stars.map((star, i) => (
+          <FaStar key={i} />
+        ))}
+      </Stars>
+      <Testimonial>{item.disc}</Testimonial>
+    </Card>
   );
 };
 
-export default ClientSlider;
-
-const Container = styled.div`
-  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
-  padding: 1.5rem 1rem;
+const Card = styled.div`
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 15px;
+  padding: 2rem;
   margin: 0 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(1, 190, 150, 0.1);
+  }
 `;
 
 const Header = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  .quote {
-    font-size: 3rem;
-    color: #01be96;
-    opacity: 0.7;
-  }
-
-  .star {
-    color: #ffcd3c;
-    font-size: 1.3rem;
-  }
-`;
-const Body = styled.p`
-  font-size: 0.8rem;
-  margin-bottom: 1.5rem;
-`;
-const Footer = styled.div`
-  display: flex;
-  align-items: center;
   gap: 1rem;
+  margin-bottom: 1.5rem;
+
   img {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     object-fit: cover;
-  }
-
-  h1 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    @media (max-width: 580px) {
-      font-size: 1rem;
-    }
-    @media (max-width: 538px) {
-      font-size: 0.9rem;
-    }
-  }
-
-  p {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
-    @media (max-width: 538px) {
-      font-size: 0.6rem;
-    }
+    border: 2px solid #01be96;
   }
 `;
+
+const Name = styled.h3`
+  color: #fff;
+  margin: 0;
+  font-size: 1.2rem;
+`;
+
+const Position = styled.p`
+  color: #01be96;
+  margin: 0;
+  font-size: 0.9rem;
+`;
+
+const Stars = styled.div`
+  color: #ffd700;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.3rem;
+`;
+
+const Testimonial = styled.p`
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+`;
+
+export default ClientSlider;

@@ -8,24 +8,48 @@ import styled from "styled-components";
 
 let data = [
   {
-    img: "images/petsbroz.png",
-    disc: "The project is built using the React.js library, allowing for a dynamic and interactive user interface.",
+    img: "/images/agora.png",
+    disc: `Full-stack e-commerce platform built with React.js + Node.js featuring:
+    • Modern UI using Shadcn UI component library
+    • Advanced product management (details, comparisons, recommendations)
+    • AI-powered visual search using image recognition
+    • Stripe payment gateway integration
+    • Cart system with shipping address management
+    • JWT & Google authentication
+    • Responsive design with modular CSS architecture
+    [Frontend Focus - React.js, Redux Toolkit, Axios]`,
+    href: "https://agora-1c17a.web.app/",
   },
   {
-    img: "images/toyride.png",
-    disc: "The project is built using the React.js library, allowing for a dynamic and interactive user interface",
+    img: "/images/instagram.png",
+    disc: `Next.js social media clone with Firebase integration:
+    • Real-time CRUD operations for posts/comments
+    • Firebase Authentication & Firestore database
+    • Infinite scroll with react-infinite-scroll-component
+    • Follow/unfollow system with user profiles
+    • Like/favorite functionality with instant updates
+    • Search API for user discovery
+    • Moment.js integration for time formatting
+    • Full responsive design using Tailwind CSS
+    [Solo Full-Stack Development - Next.js 13, Firebase, Shadcn UI]`,
+    href: "https://insta-pk.vercel.app/",
   },
   {
-    img: "images/mizuxi.png",
-    disc: "The project is built using the React.js library, allowing for a dynamic and interactive user interface",
+    img: "/images/petsbroz.png",
+    disc: `Pet care marketplace landing page
+    • Responsive UI with CSS Grid/Flexbox
+    • Interactive product showcases
+    • Basic contact forms with Formik
+    [Early Career Project - React.js, Bootstrap]`,
+    href: "https://www.petsbroz.com/",
   },
   {
-    img: "images/destiners.png",
-    disc: "The project is built using the React.js library, allowing for a dynamic and interactive user interface",
-  },
-  {
-    img: "images/agglomerate.png",
-    disc: "The project is built using the React.js library, allowing for a dynamic and interactive user interface",
+    img: "/images/toyride.png",
+    disc: `E-commerce template for toy store
+    • Product category layouts
+    • Basic shopping cart implementation
+    • Hero sections with CSS animations
+    [Learning Project - Vanilla JS, CSS3]`,
   },
 ];
 
@@ -107,20 +131,58 @@ const Container = styled.div`
   position: relative;
 `;
 
+// SliderComp.js - Button Positioning Fix
 const Buttons = styled.div`
   button {
-    width: 2rem;
-    height: 2rem;
-    background-color: rgba(255, 255, 255, 0.1);
+    width: 3rem;
+    height: 3rem;
+    background: rgba(1, 190, 150, 0.2);
+    border: 2px solid #01be96;
     cursor: pointer;
     color: #01be96;
-    border: none;
     position: absolute;
-    top: 45%;
-    right: -1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 2; /* Ensure buttons stay on top */
+
+    &:hover {
+      background: #01be96;
+      color: white;
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    svg {
+      width: 1.5em;
+      height: 1.5em;
+    }
   }
 
   .back {
-    left: -1rem;
+    left: -4.5rem;
+  }
+
+  .next {
+    right: -4.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .back {
+      left: -1rem;
+    }
+    .next {
+      right: -1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    button {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 `;
