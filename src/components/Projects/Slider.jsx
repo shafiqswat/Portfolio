@@ -35,6 +35,16 @@ let data = [
     href: "https://insta-pk.vercel.app/",
   },
   {
+    img: "/images/tents.png",
+    disc: `Tents E-commerce Template  A minimalist e-commerce template designed for outdoor tent stores, featuring:
+    •  Well-structured product category layouts
+    •  A functional shopping cart for seamless checkout
+    • Hero sections with CSS animations
+    • Engaging hero sections with smooth CSS animations
+    • Tech Stack: Vanilla JS, CSS3 `,
+    href: "https://xn------ozeabbjoc1bi1bza5e9jeihbm3d3ag.com/",
+  },
+  {
     img: "/images/petsbroz.png",
     disc: `Pet care marketplace landing page
     • Responsive UI with CSS Grid/Flexbox

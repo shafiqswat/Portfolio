@@ -9,8 +9,47 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import emailjs from "emailjs-com";
+// import { message } from "antd";
 
 const Footer = () => {
+  const [formData, setFormData] = React.useState({
+    fullName: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      from_name: formData.fullName,
+      from_email: formData.email,
+      to_name: "Muhammad Shafiq",
+      message: formData.message,
+    };
+
+    emailjs
+      .send(
+        "service_fiwdib9", // Your EmailJS service ID
+        "template_yntcbqc", // Your EmailJS template ID
+        templateParams, // Passing the template parameters
+        "6BDFjDmtzzcvhWvzD" // Your EmailJS user ID
+      )
+      .then(
+        (response) => {
+          alert("Email sent successfully!");
+        },
+        (error) => {
+          alert("Error sending email: " + error.text);
+        }
+      );
+  };
+
   const scrollUp = () => {
     window.scroll({
       top: 0,
@@ -42,7 +81,7 @@ const Footer = () => {
               <FiPhoneCall />
             </span>
             <Slide direction='left'>
-              <a href='tel:+4733378901'>+92 3470817600</a>
+              <a href='tel:+923470817600'>+92 3470817600</a>
             </Slide>
           </div>
           <div>
@@ -98,15 +137,19 @@ const Footer = () => {
       </Profile>
       <Form>
         <Slide direction='right'>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className='name'>
               <span>
                 <CgProfile />
               </span>
               <input
+                value={formData.fullName}
                 type='text'
                 placeholder='Fullname...'
                 required
+                onChange={handleChange}
+                name='fullName'
+                id='fullName'
               />
             </div>
             <div className='email'>
@@ -114,9 +157,13 @@ const Footer = () => {
                 <MdAlternateEmail />
               </span>
               <input
+                value={formData.email}
                 type='email'
                 placeholder='Email...'
                 required
+                onChange={handleChange}
+                name='email'
+                id='email'
               />
             </div>
             <div className='message'>
@@ -124,10 +171,14 @@ const Footer = () => {
                 <FiMail />
               </span>
               <textarea
+                value={formData.message}
                 cols='30'
                 rows='10'
                 placeholder='Message...'
-                required></textarea>
+                required
+                onChange={handleChange}
+                name='message'
+                id='message'></textarea>
             </div>
             <button>Submit</button>
           </form>

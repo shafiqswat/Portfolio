@@ -44,12 +44,18 @@ const ProfComponent = () => {
             <p>Check out my</p>
             <div className='social-icons'>
               <span>
-                <a href='/'>
+                <a
+                  href='https://www.instagram.com/shafiqdeveloper/'
+                  target='_blank'
+                  rel='noreferrer'>
                   <AiOutlineInstagram />
                 </a>
               </span>
               <span>
-                <a href='/'>
+                <a
+                  href='https://agora-1c17a.web.app/'
+                  target='_blank'
+                  rel='noreferrer'>
                   <GiEarthAmerica />
                 </a>
               </span>
