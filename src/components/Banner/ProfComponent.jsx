@@ -71,14 +71,7 @@ const ProfComponent = () => {
           </Social>
         </Texts>
       </Slide>
-      <Slide direction='right'>
-        {/* <Profile>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/profile.jpg`}
-            alt='profile'
-          />
-        </Profile> */}
-      </Slide>
+      <Slide direction='right'></Slide>
     </Container>
   );
 };
