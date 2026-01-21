@@ -22,16 +22,22 @@ const Header = () => {
           <a href='#home'>Home</a>
         </span>
         <span>
-          <a href='#skills'>Services</a>
+          <a href='#about'>About</a>
+        </span>
+        <span>
+          <a href='#skills'>Skills</a>
+        </span>
+        <span>
+          <a href='#experience'>Experience</a>
+        </span>
+        <span>
+          <a href='#education'>Education</a>
         </span>
         <span>
           <a href='#project'>Projects</a>
         </span>
         <span>
-          <a href='#client'>Testimonials</a>
-        </span>
-        <span>
-          <a href='#footer'>Portfolio</a>
+          <a href='#footer'>Contact</a>
         </span>
       </Nav>
       <div

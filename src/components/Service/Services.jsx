@@ -1,11 +1,9 @@
 /** @format */
 import React from "react";
-import { FaReact, FaBootstrap, FaJs, FaCss3 } from "react-icons/fa";
+import { FaReact, FaTools } from "react-icons/fa";
 import {
-  SiNextdotjs,
-  SiRedux,
-  SiFirebase,
-  SiTailwindcss,
+  SiPuppeteer,
+  SiNodedotjs, 
 } from "react-icons/si";
 import styled from "styled-components";
 import Card from "./Card";
@@ -25,8 +23,8 @@ const MySkills = () => {
           <Slide direction='left'>
             <Card
               Icon={FaReact}
-              title={"React Specialist"}
-              disc={`Building dynamic SPAs with React Hooks, Context API, and advanced component architecture`}
+              title={"Frontend"}
+              disc={`React.js, Next.js, Tailwind CSS, CSS Modules, Styled Components, Shadcn/UI, Ant Design, Responsive UI, Performance Optimization`}
               color='#01be96'
             />
           </Slide>
@@ -34,9 +32,9 @@ const MySkills = () => {
         <CardWrapper>
           <Slide direction='up'>
             <Card
-              Icon={SiNextdotjs}
-              title={"Next.js Pro"}
-              disc={`Developing full-stack apps with Server-Side Rendering, Static Site Generation, and API routes`}
+              Icon={SiNodedotjs}
+              title={"Backend & Full Stack"}
+              disc={`Node.js, Express.js, REST APIs, Authentication, Firebase, MongoDB, Server-side rendering, API routes`}
               color='#01be96'
             />
           </Slide>
@@ -44,9 +42,9 @@ const MySkills = () => {
         <CardWrapper>
           <Slide direction='right'>
             <Card
-              Icon={SiRedux}
-              title={"State Management"}
-              disc={`Mastering complex state handling with Redux Toolkit and modern middleware solutions`}
+              Icon={SiPuppeteer}
+              title={"Web Scraping & Automation"}
+              disc={`Puppeteer, Playwright, Cheerio, Large-scale crawlers, PDF & document scraping, Proxy handling, anti-bot bypass, Data cleaning & normalization`}
               color='#01be96'
             />
           </Slide>
@@ -54,29 +52,9 @@ const MySkills = () => {
         <CardWrapper>
           <Slide direction='left'>
             <Card
-              Icon={SiTailwindcss}
-              title={"CSS Architect"}
-              disc={`Crafting responsive UIs with Tailwind CSS, Styled Components, and CSS Modules`}
-              color='#01be96'
-            />
-          </Slide>
-        </CardWrapper>
-        <CardWrapper>
-          <Slide direction='up'>
-            <Card
-              Icon={SiFirebase}
-              title={"Backend Integration"}
-              disc={`Implementing auth, databases, and cloud functions using Firebase services`}
-              color='#01be96'
-            />
-          </Slide>
-        </CardWrapper>
-        <CardWrapper>
-          <Slide direction='right'>
-            <Card
-              Icon={FaJs}
-              title={"JavaScript ES6+"}
-              disc={`Modern JS development with async/await, functional programming, and API integration`}
+              Icon={FaTools}
+              title={"Programming & Tools"}
+              disc={`JavaScript (ES6+), Git, GitHub, Postman, Linux / VPS environments`}
               color='#01be96'
             />
           </Slide>
@@ -122,13 +100,13 @@ const Container = styled.div`
 
 const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr;
   margin-top: 4rem;
   gap: 2rem;
 
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
   }
 `;
 

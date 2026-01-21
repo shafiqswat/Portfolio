@@ -8,58 +8,40 @@ import styled from "styled-components";
 
 let data = [
   {
+    img: "/images/agglomerate.png", // Placeholder for Glance
+    disc: `Web Scraping Engineer — Glance
+    • Built and maintained large-scale web scrapers
+    • Extracted structured data from complex websites & documents
+    • Implemented deduplication and normalization systems
+    [Python, Puppeteer, Playwright, Node.js]`,
+    href: "#", // No link provided
+  },
+  {
+    img: "/images/destiners.png", // Placeholder for TDI
+    disc: `Data & Automation Developer — TDI International
+    • Developed crawlers for structured and unstructured data
+    • Improved scraping accuracy by 40%
+    • Designed reusable scraping utilities
+    [Node.js, Cheerio, API Integration]`,
+    href: "#",
+  },
+  {
     img: "/images/agora.png",
-    disc: `Full-stack e-commerce platform built with React.js + Node.js featuring:
-    • Modern UI using Shadcn UI component library
-    • Advanced product management (details, comparisons, recommendations)
-    • AI-powered visual search using image recognition
-    • Stripe payment gateway integration
-    • Cart system with shipping address management
-    • JWT & Google authentication
-    • Responsive design with modular CSS architecture
-    [Frontend Focus - React.js, Redux Toolkit, Axios]`,
+    disc: `Full-Stack E-commerce — Agora
+    • Contributed to data-driven web solutions
+    • Integrated APIs and automation pipelines
+    • AI-powered visual search & Stripe payments
+    [React, Node.js, Redux, MongoDB]`,
     href: "https://agora-1c17a.web.app/",
   },
   {
     img: "/images/instagram.png",
-    disc: `Next.js social media clone with Firebase integration:
-    • Real-time CRUD operations for posts/comments
-    • Firebase Authentication & Firestore database
-    • Infinite scroll with react-infinite-scroll-component
-    • Follow/unfollow system with user profiles
-    • Like/favorite functionality with instant updates
-    • Search API for user discovery
-    • Moment.js integration for time formatting
-    • Full responsive design using Tailwind CSS
-    [Solo Full-Stack Development - Next.js 13, Firebase, Shadcn UI]`,
+    disc: `Social Media Clone — Full Stack
+    • Real-time CRUD with Firebase
+    • Auth, Firestore, Infinite Scroll
+    • Responsive Shadcn UI
+    [Next.js 13, Firebase, Tailwind CSS]`,
     href: "https://insta-pk.vercel.app/",
-  },
-  {
-    img: "/images/tents.png",
-    disc: `Tents E-commerce Template  A minimalist e-commerce template designed for outdoor tent stores, featuring:
-    •  Well-structured product category layouts
-    •  A functional shopping cart for seamless checkout
-    • Hero sections with CSS animations
-    • Engaging hero sections with smooth CSS animations
-    • Tech Stack: Vanilla JS, CSS3 `,
-    href: "https://xn------ozeabbjoc1bi1bza5e9jeihbm3d3ag.com/",
-  },
-  {
-    img: "/images/petsbroz.png",
-    disc: `Pet care marketplace landing page
-    • Responsive UI with CSS Grid/Flexbox
-    • Interactive product showcases
-    • Basic contact forms with Formik
-    [Early Career Project - React.js, Bootstrap]`,
-    href: "https://www.petsbroz.com/",
-  },
-  {
-    img: "/images/toyride.png",
-    disc: `E-commerce template for toy store
-    • Product category layouts
-    • Basic shopping cart implementation
-    • Hero sections with CSS animations
-    [Learning Project - Vanilla JS, CSS3]`,
   },
 ];
 

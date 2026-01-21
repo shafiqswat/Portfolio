@@ -9,7 +9,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 // import { message } from "antd";
 
 const Footer = () => {
@@ -91,7 +91,7 @@ const Footer = () => {
               </span>
             </Slide>
             <Slide>
-              <a href='mailto:miladamiri@gmail.com'>shafiqswat02@gmail.com</a>
+              <a href='mailto:shafiqkhdev@gmail.com'>shafiqkhdev@gmail.com</a>
             </Slide>
           </div>
         </div>
@@ -104,7 +104,8 @@ const Footer = () => {
               <span>
                 <a
                   href='https://github.com/shafiqswat'
-                  target='_blank'>
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   <AiFillGithub />
                 </a>
               </span>
@@ -113,7 +114,8 @@ const Footer = () => {
               <span>
                 <a
                   href='https://www.linkedin.com/in/muhammad-shafiq-419a4327b/'
-                  target='_blank'>
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   <AiFillLinkedin />
                 </a>
               </span>
@@ -122,7 +124,8 @@ const Footer = () => {
               <span>
                 <a
                   href='https://www.facebook.com/profile.php?id=100050978034109'
-                  target='_blank'>
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   <BsFacebook />
                 </a>
               </span>

@@ -3,10 +3,13 @@
 import styled from "styled-components";
 import Header from "./components/Banner/Header";
 import ProfComponent from "./components/Banner/ProfComponent";
-import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import Services from "./components/Service/Services";
+import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
+import Education from "./components/Education/Education";
+
 function App() {
   return (
     <Container>
@@ -14,11 +17,15 @@ function App() {
         <Header />
         <ProfComponent />
       </Banner>
+      <About />
       <Services />
+      <LightColor>
+        <Experience />
+      </LightColor>
+      <Education />
       <LightColor>
         <Projects />
       </LightColor>
-      <Clients />
       <LightColor>
         <Footer />
       </LightColor>

@@ -21,22 +21,12 @@ const ProfComponent = () => {
             Hello <span className='highlight'>I'm</span>
           </h4>
           <h1 className='highlight'>Muhammad Shafiq</h1>
-          <h3>Frontend Developer & CS Student</h3>
-          <h3>🚀 Crafting Dynamic Web Experiences with Modern Tech Stack</h3>
+          <h3>Full-Stack Developer & Web Scraping Engineer</h3>
           <p>
-            🌟 Second-year Computer Science student passionate about frontend
-            development. Proficient in <strong>React.js</strong> and{" "}
-            <strong>Next.js</strong> frameworks, with expertise in{" "}
-            <strong>Tailwind CSS</strong>, <strong>Styled Components</strong>,
-            and <strong>Modular CSS</strong> for beautiful, responsive designs.
+            🚀 I build scalable web apps, automation systems, and high-accuracy web scrapers.
           </p>
           <p>
-            🔥 Skilled in state management using <strong>Redux</strong> and{" "}
-            <strong>Context API</strong>, with backend integration experience
-            through <strong>Firebase</strong>. Proficient in UI libraries like{" "}
-            <strong>Ant Design</strong> and <strong>Shadcn/ui</strong>, and form
-            handling with <strong>react-hook-form</strong> +{" "}
-            <strong>Zod</strong> validation.
+            👉 Specialized in React, Node.js, API development, and large-scale web scraping.
           </p>
 
           <ActionButton onClick={handleCall}>Let's talk</ActionButton>
@@ -246,23 +236,23 @@ const Social = styled.div`
   }
 `;
 
-const Profile = styled.div`
-  img {
-    width: 20rem;
-    height: 28rem;
-    filter: drop-shadow(0px 10px 20px rgba(1, 190, 150, 0.3));
-    transition: transform 400ms ease-in-out;
-    border-radius: 10px;
+// const Profile = styled.div`
+//   img {
+//     width: 20rem;
+//     height: 28rem;
+//     filter: drop-shadow(0px 10px 20px rgba(1, 190, 150, 0.3));
+//     transition: transform 400ms ease-in-out;
+//     border-radius: 10px;
 
-    @media (max-width: 940px) {
-      width: 100%;
-      object-fit: cover;
-      height: auto;
-      aspect-ratio: 1/1;
-    }
-  }
+//     @media (max-width: 940px) {
+//       width: 100%;
+//       object-fit: cover;
+//       height: auto;
+//       aspect-ratio: 1/1;
+//     }
+//   }
 
-  &:hover img {
-    transform: translateY(-10px) scale(1.02);
-  }
-`;
+//   &:hover img {
+//     transform: translateY(-10px) scale(1.02);
+//   }
+// `;
